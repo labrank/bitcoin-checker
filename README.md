@@ -1,5 +1,6 @@
 # bitcoin-checker
-#uses python 3
+## uses python 3
+
 install dependencies:
  pip install requests matplotlib
  
