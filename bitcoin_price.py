@@ -14,10 +14,10 @@ class Bitcoin:
             return json.loads(self.resp.content.decode('utf-8'))
         else:
             return None
-    
+
     def float_price(self, json_response):
         if json_response is not None:
-            rate = json_response['bpi']['USD']['rate_float']
+            rate = json_response['bpi']['EUR']['rate_float']
             try:
                 return float(rate)
             except:

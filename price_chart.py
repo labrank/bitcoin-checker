@@ -15,7 +15,8 @@ with open('bitcoin_history.csv', 'r') as history:
 print(len(x))
 print(len(y))
 
-plt.plot(x, y, marker='o')
+plt.hist(y, bins='auto', rwidth=0.5,
+         color='#607c8e')
 
 plt.title('Bitcoin price chart')
 
